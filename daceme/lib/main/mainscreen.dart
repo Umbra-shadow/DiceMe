@@ -169,12 +169,7 @@ class _DiceMeScreenState extends State<DiceMeScreen> {
                 const SizedBox(height: 20),
                 TextButton(
                   onPressed: () {
-                    // Updated to push the new DiceInfoPage instead of a named route
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => const DiceInfoPage(),
-                      ),
-                    );
+                    Navigator.pushNamed(context, '/mapping');
                   },
                   style: TextButton.styleFrom(
                     foregroundColor: AppColors.textPrimaryBlack,
